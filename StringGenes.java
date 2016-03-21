@@ -56,8 +56,6 @@ public class StringGenes {
             idy = g +1;
         } 
         int size = storex.size() + storey.size();
-        //float cgRatio = size / dna.length();
-        //return cgRatio;
         return (float)size/dna.length();
     }
      public StorageResource storeAll(String dna) {
@@ -100,7 +98,6 @@ public class StringGenes {
         System.out.println("Genes found: " + s1.size());
         System.out.println("");
         printGenes(s1);
-        //codonCTG(dna);
     }
     public void printGenes(StorageResource sr) {
         StorageResource strlen1 = new StorageResource();
@@ -134,7 +131,6 @@ public class StringGenes {
     public StorageResource storeCtg(String dna) {
         StorageResource sr = new StorageResource();                      
         int ctgidx = 0;
-        //int numCtg = 0;
         while (true) {
             int index = dna.indexOf("CTG", ctgidx);
             if (index == -1) {
